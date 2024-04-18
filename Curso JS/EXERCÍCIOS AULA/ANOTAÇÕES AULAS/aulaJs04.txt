@@ -1,0 +1,79 @@
+FUNÇÃO
+é um conjunto de instruções que se agrupam para realizar uma tarefa concreta, que depois pode ser reutilizada
+
+function saudacao() {
+    console.log("Olá, estudantes!");
+}
+
+- pode ser repetida
+- não pode usar mesmo nome pra duas funções
+- o ideal é não ter acento no nome
+- a ordem dos funções não importa
+
+pra chamar ela depois é só
+
+saudaçao()
+
+ARGUMENTOS E PARÂMETROS----------------------
+
+Quando enviamos à função um ou mais valores para serem utilizados em suas operações, estamos falando dos argumentos da função. function exemplo(X)
+
+Para que a função receba esses valores, usamos os parâmetros da função, que ficam entre os parênteses, logo após seu nome. quando chama -> function exemplo (argumento)
+
+
+function unirPalavras(palavra1, palavra2) {
+    console.log(palavra1 + " " + palavra2);
+}
+
+unirPalavras("Olá", "Coder"); // -> “Olá Coder”
+unirPalavras("Cursando", "JS"); // -> “Cursando JS”
+
+RETURN------------------------------------
+funções podem gerar um valor de retorno usando a palavra return, obtendo esse valor quando a função é chamada.
+
+ function somar(primeiroNumero, segundoNumero) {
+    return primeiroNumero + segundoNumero;
+}
+var resultado = somar(5, 8);
+
+FUNCTION ANÔNIMA--------------------------------------
+Uma função anônima é uma função que é definida sem nome e é utilizada para ser enviada como parâmetro ou atribuída a uma variável.
+
+var soma = function (a, b) { return a + b }
+var subtrair = function (a, b) { return a - b }
+
+console.log(soma(15, 20))
+console.log(subtrair(15, 5))
+
+ARROW FUNCTION ----------------------------------------
+dentificamos as arrow functions como funções anônimas de sintaxe simplificada. Estão disponíveis a partir da versão ES6 do JavaScript e não usam a palavra function, mas sim => (seta) entre os parâmetros e o bloco.
+var soma = (a, b) => { return a + b }
+//Se for uma função de uma só linha com um retorno, não é necessário escrever o corpo. 
+var subtrair = (a, b) => a - b;
+
+console.log(soma(15, 20))
+console.log(subtrair(20, 5))
+
+var somar = (a, b) => a + b
+var subtrair = (a, b) => a - b
+var calcularICMS = x => x * 0.21
+
+var precoProduto = 500
+var desconto = 50
+
+//Calculo o PrecoProduto + ICMS - Desconto
+var icms = calcularICMS(precoProduto)
+var soma = somar(precoProduto, icms)
+var novoPreco = subtrair(soma, desconto)
+console.log(novoPreco)
+
+
+
+
+
+
+
+
+
+
+

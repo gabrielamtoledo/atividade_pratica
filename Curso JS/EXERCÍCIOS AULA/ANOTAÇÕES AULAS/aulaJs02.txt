@@ -1,0 +1,30 @@
+Chamar ele no começo -> usa defer
+
+comentário linha única -> //
+comentário maior */ /*
+
+não precia repetir "var" p atribuir
+ex:
+
+//declaração
+var nome
+var sobrenome
+
+// atribuição
+
+nome = "Pedro"
+sobrenome = 'Silva'
+
+Mas é bom declarar e atribuir inicialmente
+
+//Dica: botar um texto no 
+console.log("texto", texto) 
+//pra facilitar a debugar
+
+var idadeInserida = prompt("Insira sua diade");//tudo recebido em prompt é lido como String
+
+var Conversao = parseInt(idadeInserida)
+alert("assim você faz um alerta" + alerta)
+
+
+

@@ -1,0 +1,51 @@
+aulaJs03
+
+If or Else
+
+- Para fazer verificações de ocndições
+Estrtura:
+
+var combustivel = 'gasolina'
+
+if (combustível == "Gás") {
+  alert("O carro é movido a gás")
+} else {
+  alert ("O carro é movido a gasolina")
+
+Se preciar de várias comparações -> else if
+var combustivel = 'gasolina'
+
+if (combustível == "Gás") {
+  alert("O carro é movido a gás")
+} else if (combustível == "Gasolina") {
+  alert ("O carro é movido a gasolina")
+} else if (combustível == "Álcool") {
+  alert ("O carro é movido a gasolina")
+} else {
+  alert ("O carro é movido a energia")
+
+ATENÇÃO
+pra comparar usa ==
+pra comparar em tipo e conteúdo ===
+
+outros operadores relacionais:
+!= diferente
+< menor que
+> maior que
+<= menor ou igual que
+>= maior ou igual que
+
+operadores LÓGICOS
+
+&& - E
+|| - Ou
+
+Pra usar juntos
+
+if (x ==y ) || (z==a) ...
+
+
+em casos de nome lembrar de checar 
+
+(nome==Ana) || (nome==ANA) || (nome==ana) 
+

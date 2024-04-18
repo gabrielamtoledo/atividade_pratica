@@ -1,0 +1,83 @@
+aulaJS09
+
+ARRAYS
+
+tipo de dado que serve para armazenar valores sequencialmente em forma de lista. 
+
+Os elementos têm um índice (index), que vai de 0 até o último elemento.
+
+sintaxe:
+const numeros = [1, 2];
+
+para acessar basta:
+console.log(numeros[posição do item no array - de 0 em diante])
+
+para utilizar laços no array, você pode usar ses itens separadamente,usando o index 
+ex:
+const numeros = [1, 2, 3, 4, 5];
+
+for (let index = 0; index < 5; index++) {
+    console.log(numeros[index]);
+}
+
+PROPRIEDADES
+length: quantos itens tem
+const meuArray = ["rosa", "verde", "azul"];
+console.log(meuArray.length); //imprime 3
+
+for (let i = 0; i < meuArray.length; i++) {
+    console.log(meuArray[i]);
+}
+
+acrescentando elementos:
+
+ARRAY.push(elemento) -> acrescenta no final
+.unshift(elemento)-> acrscebta no início
+
+removendo elementos:
+.shift()->
+.pop()-> 
+
+Splice:
+O método splice() permite eliminar um ou vários elementos de um array em qualquer posição. 
+
+ex:
+
+array.splice(x,y) -> x é o index onde começa a eliminar, y é a quantidade de itens a partir de x qe vai eliminar
+
+Join:
+faz uma string com todos os elementos do array
+
+array.join('o q vc quer usar p dividir eles tipo vírgula enfim')
+
+Concat:
+junta dois arrays em uma string
+const array3 = array1.concat(array2)
+
+Slice:
+O método slice retorna uma parte do array para um novo array. O inical n é modificado.
+
+const arrayCortado = arrayOriginal.slice(x, y); // sendo x o index do primeiro array a tirar e y o array seguinte do q vc quer incluir
+
+
+Includes:
+permite saber se um elemento utilizado como parâmetro existe ou não dentro de um array, retornando um valor booleano em caso afirmativo ou negativo
+
+array.includes(suposto elemento)
+
+IndexOf
+permite obter o índice de um elemento em um array
+array.indexOf(suposto elemento)
+
+se o elemento n existir no array retorna o valor de -1
+
+Reverse
+nverte a ordem dos elementos dentro de um array. MUDA P SEMPRE
+array.reverse()
+
+
+
+
+
+
+

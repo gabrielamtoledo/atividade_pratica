@@ -1,0 +1,32 @@
+aulaJS08
+
+Objetos em JavaScript podem ter propriedades, que definem suas características.
+OBJETO-> CONJ DE PROPRIEDADES 
+DECLARANDO OBJETO 
+
+let xicara = {
+    cor: "branca",
+    forma: "redonda",
+    peso: 5,
+    capacidade: 10
+}
+
+console.log(xicara);
+
+OBTENDO O VALOR DA PROPRIEDADE 
+
+Para obter o valor de uma propriedade em um objeto:
+Notação ponto (.): o nome da variável do objeto, seguido de ponto e o nome da propriedade
+Notação colchetes ([ ]): o nome da variável do objeto, seguido de colchetes e uma string do nome da propriedade dentro deles
+Console.log(xicara.cor);
+console.log(xicara["capacidade"]);
+
+ATRIBUINDO VALOR ÀS PROPRIEDADES
+xicara.peso = 7;
+xicara["cor"] = "rosa";
+
+CONSTRTOR E NEW
+
+
+
+

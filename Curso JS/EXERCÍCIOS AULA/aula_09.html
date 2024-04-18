@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+</head>
+
+<body>
+    <script>
+    let cores = []
+for (let i = 0; i < 5; i++) {
+  let cor = prompt(`Digite a cor ${i + 1}: `)
+  cores.push(cor)
+}
+
+console.log("Array completo:: ", cores)
+console.log("Tamnho do array: ", cores.length)
+
+let corRemover = prompt("Digite a cor a ser removida: ")
+let indexRemover = cores.indexOf(corRemover)
+if (indexRemover != -1) {
+  cores.splice(indexRemover, 1)
+  console.log( `A cor ${corRemover} foi removida`)
+} else {
+  console.log( `A cor ${corRemover} não foi encontrada no array`)
+}
+
+cores.forEach((cor, index) => {
+  console.log(`Na posição ${index} temos a cor ${cor}`)
+})
+
+let novaCor = prompt("Digite uma nova cor")
+if (!cores.includes(novaCor)) {
+  cores.unshift(novaCor)
+  console.log(`A cor ${novaCor} foi inserida na primeira posição`)
+} else {
+  console.log(`A cor ${novaCor} ja existe no array`)
+}
+console.log(cores)
+
+    </script>
+</body>
+
+</html>

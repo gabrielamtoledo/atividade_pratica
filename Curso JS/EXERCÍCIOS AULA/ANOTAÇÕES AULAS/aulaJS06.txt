@@ -1,0 +1,90 @@
+aulaJS06
+
+CICLOS
+Bloco de código qe repete de acordo com alguma circunstância
+
+LOOPS POR CONTAGEM
+acontecem uma qantidade de vezes determinada. Utilizia da estrutura FOR 
+sintaxe:
+for (início; condição; atualização) {
+    //o que está escrito aqui será executado enquanto durar o loop
+}
+
+uso comum: 
+for (let i=0; i<10; i++) {
+    //ou seja, o contador 'i' inicia em 0, roda até que ele seja 10 e no final ele soma a si prórpio já que i++ = i=i+1 
+}
+
+DICA EXTRA 
+
+para texto e variáveis `aaa${var}`
+
+BREAK
+para quebrar o laço sob certa condição, basta apenas 
+
+for (let i = 1; i <= 5; i++) {
+    //Se a variável i for igual à 3, o for será interrompido. 
+    if (i == 3) {
+        break;
+    }
+    console.log(i);
+}
+
+
+CONTINUE
+para continuar o laço, basta apenas 
+
+for (let i = 1; i <= 5; i++) {
+    //Se a variável i for igual à 3, o for será interrompido. 
+    if (i == 3) {
+        break;
+    }
+    console.log(i);
+}
+
+WHILE
+Cria um laço enquanto uma condição for verdadeira
+CUIDADO P N CRIAR UM INFINITO
+
+while (condição) { }
+
+DO WHILE
+Faz alguma coisa até ENQUANTO a condição é verdadeira, mas só checa no final
+
+let numero = 0;
+do {
+    //Repetimos com do...while enquanto o usuário não inserir um número
+    numero = prompt("Inserir um número");
+    console.log(numero);
+    //O loop será interrompido quando não digital um número   
+} while (parseInt(numero));
+
+SWITCH 
+vários IFs de mandeira organizada
+
+Cada condição é verificada e, se  cumprida, executada em cada case.
+depois das instruções de cada case, usa o break para interromper
+
+se nenhum valor da variável do switch corresponde aos valores definidos em algum dos case se utiliza o valor default 
+
+switch (numero) {
+    case 5:
+      ...
+        break;
+
+    case 8:
+      ...
+        break;
+
+    case 20:
+      ...
+        break;
+
+    default:
+      ...
+        break;
+}
+
+
+
+
